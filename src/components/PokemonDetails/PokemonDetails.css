@@ -1,0 +1,39 @@
+.pokemonDetailsWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin: auto;
+}
+
+.pokemonDetailsTitle{
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+.pokemonName{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.pokemonAttributes{
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 18px;
+
+}
+
+.pokemonImages{
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    margin-bottom: 20px;
+}
+
