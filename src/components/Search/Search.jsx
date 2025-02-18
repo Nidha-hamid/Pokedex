@@ -1,12 +1,15 @@
+import useDebounce from "../../hooks/useDebounce";
 import "./Search.css";
 
-function Search() {
+function Search({ updateSearchTerm }) {
+  const debounceUpdateSearchTerm = useDebounce((e) => updateSearchTerm(e.target.value))
   return (
     <div className="searchWrapper">
       <input
         className="searchInput"
         type="text"
-        placeholder="Which pokemon you are looking for..."
+        placeholder="Which Pokémon are you looking for..."
+        onChange={debounceUpdateSearchTerm}
       />
     </div>
   );

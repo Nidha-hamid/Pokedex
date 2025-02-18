@@ -55,7 +55,7 @@ function PokemonList() {
       <div className="pokemonListWrapper">
     
         {pokemonview.map((pk) => ( 
-          <Pokemon  id={pk.Id} name={pk.Name} imageURL={pk.Image}   />
+          <Pokemon  id={pk.Id} key={pk.Id} name={pk.Name} imageURL={pk.Image}   />
         ))}
       </div>
     </>
